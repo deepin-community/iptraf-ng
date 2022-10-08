@@ -1,0 +1,4 @@
+iptraf-ng usr/sbin/
+Documentation/*.html usr/share/doc/iptraf-ng/Documentation/
+Documentation/*.png usr/share/doc/iptraf-ng/Documentation/
+Documentation/stylesheet-images usr/share/doc/iptraf-ng/Documentation/

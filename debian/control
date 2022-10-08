@@ -1,0 +1,19 @@
+Source: iptraf-ng
+Section: net
+Priority: optional
+Maintainer: Aron Xu <aron@debian.org>
+Build-Depends: debhelper (>= 10), libncurses5-dev, libncursesw5-dev, docbook-utils
+Standards-Version: 4.5.0
+Homepage: https://github.com/iptraf-ng/iptraf-ng
+
+Package: iptraf-ng
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: iptraf
+Description: Next Generation Interactive Colorful IP LAN Monitor 
+ IPTraf-ng is an ncurses-based IP LAN monitor that generates various network
+ statistics including TCP info, UDP counts, ICMP and OSPF information, 
+ Ethernet load info, node stats, IP checksum errors, and others. 
+ .
+ IPTraf-ng is the next generation of IPTraf started as a fork of original
+ iptraf-3.0.0.

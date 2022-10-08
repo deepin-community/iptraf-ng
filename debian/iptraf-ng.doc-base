@@ -1,0 +1,9 @@
+Document: iptraf-ng
+Title: IPTraf User's Manual
+Author: Gerard Paul Java
+Abstract: This document contains the instructions on how to use the IPTraf network monitoring software version 3.0.
+Section: Help/Books
+
+Format: HTML
+Index: /usr/share/doc/iptraf-ng/Documentation/index.html
+Files: /usr/share/doc/iptraf-ng/Documentation/*.html
