@@ -1,3 +1,19 @@
+iptraf-ng (1:1.2.1-2) unstable; urgency=high
+
+  * Fix CVE-2024-52949: stack-based buffer overflow in interface name
+    handling. Apply upstream patch to use ifname_copy() instead of
+    unsafe strcpy() for interface names.
+    - src/ifaces.c: replace strcpy with ifname_copy
+    - src/ifstats.c: replace strcpy with ifname_copy
+    - src/iptraf-ng-compat.h: add ifname_copy declaration
+    - src/iptraf.c: add interface name length sanity check
+    - src/othptab.c: replace strcpy with ifname_copy
+    - src/promisc.c: replace strcpy with ifname_copy
+    - src/tcptable.c: replace strcpy with ifname_copy
+    - src/wrapper.c: add ifname_copy function implementation
+
+ -- hudeng <hudeng@deepin.org>  Tue, 29 Apr 2026 14:25:00 +0800
+
 iptraf-ng (1:1.2.1-1) unstable; urgency=medium
 
   * New upstream release.
